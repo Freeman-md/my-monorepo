@@ -7,3 +7,30 @@ settings:
 importers:
 
   .: {}
+
+  packages/batman:
+    dependencies:
+      superman:
+        specifier: ^1.0.0
+        version: 1.0.0
+
+  packages/superman: {}
+
+packages:
+
+  argv@0.0.2:
+    resolution: {integrity: sha512-dEamhpPEwRUBpLNHeuCm/v+g0anFByHahxodVO/BbAarHVBBg2MccCwf9K+o1Pof+2btdnkJelYVUWjW/VrATw==}
+    engines: {node: '>=0.6.10'}
+    deprecated: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
+
+  superman@1.0.0:
+    resolution: {integrity: sha512-kS648sfqhWMl879/L32FoWawwqhjj02BfLTN13fNABvCzSagzLpmn3zYrGXHTlvFISZr36nV3Y8qViyi4muncA==}
+    hasBin: true
+
+snapshots:
+
+  argv@0.0.2: {}
+
+  superman@1.0.0:
+    dependencies:
+      argv: 0.0.2
